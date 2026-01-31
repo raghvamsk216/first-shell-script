@@ -1,0 +1,86 @@
+Here’s the **quick and correct way to push your local shell script (or any files) from a Unix terminal to your GitHub repo** 👇
+
+***
+
+## ✅ **1. Go to your project folder**
+
+```sh
+cd /path/to/your/project
+```
+
+## ✅ **2. Initialize Git (only if not initialized already)**
+
+```sh
+git init
+```
+
+## ✅ **3. Add the GitHub repository as `origin`**
+
+Copy your repo URL from GitHub (HTTPS recommended), for example:
+
+    https://github.com/<your-username>/<repo-name>.git
+
+Add it:
+
+```sh
+git remote add origin https://github.com/<your-username>/<repo-name>.git
+```
+
+If remote already exists and gives error:
+
+```sh
+git remote set-url origin https://github.com/<your-username>/<repo-name>.git
+```
+
+***
+
+## ✅ **4. Add all files (including your shell script)**
+
+```sh
+git add .
+```
+
+Or add a specific script:
+
+```sh
+git add script.sh
+```
+
+***
+
+## ✅ **5. Commit your changes**
+
+```sh
+git commit -m "Add shell script"
+```
+
+***
+
+## ✅ **6. Push to GitHub**
+
+For the **first push**:
+
+```sh
+git push -u origin main
+```
+
+If your repo uses `master` branch:
+
+```sh
+git push -u origin master
+```
+
+***
+
+## 🎉 That’s it!
+
+Your files are now uploaded to GitHub.
+
+***
+
+If you want, I can also help you:
+
+*   Set up SSH keys so you don’t need to enter username/password
+*   Fix any push errors you’re getting
+*   Write a `.gitignore` file
+*   Create an automated script to push code
